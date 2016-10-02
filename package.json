@@ -7,7 +7,7 @@
     "node": "6.7.0"
   },
   "keywords": [],
-  "author": "",
+  "author": "avtyul",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0"
