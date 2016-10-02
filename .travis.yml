@@ -9,5 +9,5 @@ deploy:
     repo: avtyul/sematest
   run:
     - "npm i -g gulp"
-    - "echo -ne '\n\n' |npm i semantic-ui --save"
+    - "echo -ne '\n' '\n' |npm i semantic-ui --save"
     - "gulp"
