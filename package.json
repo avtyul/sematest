@@ -10,7 +10,6 @@
   "author": "",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "semantic-ui": "^2.2.4"
+    "express": "^4.14.0"
   }
 }
