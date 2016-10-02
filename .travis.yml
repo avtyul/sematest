@@ -8,6 +8,6 @@ deploy:
   on:
     repo: avtyul/sematest
   run:
-    - "npm i-g gulp"
+    - "npm i -g gulp"
     - "npm i semantic-ui --save < semantic.txt"
     - "gulp"
