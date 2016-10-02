@@ -7,8 +7,7 @@ deploy:
   app: sematest
   on:
     repo: avtyul/sematest
-  skip_cleanup: true
-  run:
+after_deploy:
     - "npm i -g gulp"
     - "echo -ne '\n\e[B\nsemantic/\n' | npm i semantic-ui --save"
     - restart
