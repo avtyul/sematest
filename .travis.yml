@@ -16,4 +16,3 @@ deploy:
   app: sematest
   on:
     repo: avtyul/sematest
-  skip_cleanup: true
