@@ -9,8 +9,10 @@ script:
 - npm run test
 deploy:
   provider: heroku
+  buildpack: nodejs
   api_key:
     secure: XpKn7uvAdqx/Qq28lSdgspyXyNVumafOsEhtR4N/JW0CiT3n64GiS1eeiBVHTNVirNhCpbG2dHsUp9/Vd+gLWa6obkwmVgd+cTXj/5V6tenShOLvez5vZ+xs/shnfXJbD6FaNg3OFA3zrAc/L8H0Y7eAOK4fUTmkkWQkOwsGNZ1t29yF6WFPOFaivbXcJkyBpMG83vOX196lQR5pP2yt+hah3KnHBpgClG/gLatJ7rinKbVbXTY9DbnyHi8PJn5LOWDip+Q+bIlFGAQiHyF6qJVZRLxaKlYGSV14P/upPycT2KcP84kk4dSl6K2+WQLpPAg2N7xOAaRFUiquXH2TNQdd+uSGZf7bWDgCTA0QY5t7P/QwtRaDML2Dno7F7f39L3RSXfQQ9vVa9Y/WCV8/Xbmg1cnOz0kgeKQHNOOs++Pw3fzxri+6RecUZZ4BRE1IWKOukwo0GdFLQm+W466WMqRML7290yGLIWq9Kz7tvFw/SvX4645oIg19gd67D7mdFxO6IkcD5cZ0ghOZvc0s8I+gYw6PpXieaX6D8iGvG0mHhOmLQKbLKlMHYsJZI/D3+SF+6jEMm6W6K7k6jn5lT3mTduCYqdoScViQtuuEIXKD26TkrclR+SU/NuFmwDl7g8wBiWPk07YadLPj5G5dYKKRMi/QYpfaHi4oMVIxZpE=
   app: sematest
   on:
     repo: avtyul/sematest
+  skip_cleanup: true
