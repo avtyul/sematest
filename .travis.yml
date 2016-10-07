@@ -1,17 +1,16 @@
 language: node_js
 node_js: 6
 install:
-  - npm i
-  - npm i -g gulp
-  - echo -ne '\n\e[B\npublic/semantic/\n' | npm i semantic-ui --save
-  - cd public/semantic && gulp build
+- npm i
+- npm i -g gulp
+- echo -ne '\n\e[B\npublic/semantic/\n' | npm i semantic-ui --save
+- cd public/semantic && gulp build
 script:
-  - npm run test
+- npm run test
 deploy:
   provider: heroku
   api_key:
-    secure: TTqtwCAxqH7VJ2UouhGLPQox/0lKOhSh4vfz/o0VJ+6EC/g34lnnBQTwu7rDGXKVyQxzjbnwFGchUldXtIh/fB3SmXYKO2TzhbzU1MB/Jpg6rjcX5vANNIjqZXvn3JF6cIwAS3j8ukQ0eM4OS1Rq5qsWiRY8WfeTEO/+fFnB6KgBTJHdNJOtJnWcHX0pHy2Kj8avaIRbjJaQN2BWu+Y44Ec2AeiPwVyoLReNYGDSdVUAc+pm+7Tc/tNdg3A9bOdYVxQSE/wZytBSvuNaF3B6wNYgx7xxc0Q2WfQBGLwg0fvfhiCQPquAtsrg2UKTY7nOozXy0eQMfMSmXTHULVk/OKU931G2YllhQt5z5g4fq8lk6QWQ1Ecai5zk5SHqavsB4pMsqdO+YVrnzDXUAadAaKqfAbmQ+YOWjiMc0RkkjtiJHRAFG9Ni+vDQMjnef2z/oE3dLnSIvMbJvtMrWUCmzHpREv7F4h2EWrwmPOKkuULI0sJ0w9Li21wRjwFaO1NB3P6591UOLPli9rnQGtiyqFDfBJSRWfJnhgNjVu9A57jbzLVC1cjYZukQ4mhMdPg9xj1BOtrFX8tEhAuBdwFRKFhzYONo4fe1Up/bDbFrSbY1ZTxMPQ7UDEKlTFZuSNod+lLMiF+EI9uxIazLBGoR8zSN2eiEQrTAWnH3Z+Vg6pY=
-  skip_cleanup: true
+    secure: mQsKzgOVvVNJcZysmvNrYsON+Kk9WrOLmIjamDqXK2qyNi+TbkblQTFkRi3tKFhdCnBP79QOxX/IjGxVVUiu5bKF3fTW1IaO6zcZhBz04fra4V6jYWJrmUoS8DPotdyk6kUVHBpK7mVPgg6sobvDM1Zy5YhTyPdeIYEnRna3rbWsBVRkupgRltjMbeU/6ntIJxyqFw30Usu5mVPRkgo2wglRNn+x6K4akWg+Amq4q8wlNiGv7TtSx2i46iYEgHw00MtN3dEN8ZO+NFhYHUQsGEFNdiHoWiRDg70QfsHnayPCwtSl4aOWety8KT7xgZ4ndbB3Fd/1Is8KnTHRqSoBmU4bnfbH0ZqHXYDpxzPFE/D1fcLs6RUH75TLGoL8tuvV1RRNU9gx+K3F2Uh11Tr8cP17zxtdw/KlItv6/npOz0NAxoSM5CbaLpmyaAlgmPNyJvQFwJJaT3aRoGl6auU/9joECzjP7DekSl6hDf79AF2bQM6caLHGSO0Ciso8Ce+UDHBnXBzsVsb35df25PSw0DenXafnCJ1/D0esPj+pLNGujIJVokf9FkdqKBzbsLFVJ+yvsuD+DMA5ZzVdr3S7QDikmtAffoSLI/OuXX4cysXKRBnzjIugPMShJA9greC4kJ+Rr7hJidQnrmlf3ER1O6dKJsgBA7E2R4hc29ZfD6U=
   app: sematest
   on:
-    repo: avtyul/sematest 
+    repo: avtyul/sematest
