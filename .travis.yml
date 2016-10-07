@@ -9,12 +9,8 @@ script:
   - npm run test
 deploy:
   provider: heroku
-
-  buildpack: https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/nodejs.tgz
   api_key:
     secure: TTqtwCAxqH7VJ2UouhGLPQox/0lKOhSh4vfz/o0VJ+6EC/g34lnnBQTwu7rDGXKVyQxzjbnwFGchUldXtIh/fB3SmXYKO2TzhbzU1MB/Jpg6rjcX5vANNIjqZXvn3JF6cIwAS3j8ukQ0eM4OS1Rq5qsWiRY8WfeTEO/+fFnB6KgBTJHdNJOtJnWcHX0pHy2Kj8avaIRbjJaQN2BWu+Y44Ec2AeiPwVyoLReNYGDSdVUAc+pm+7Tc/tNdg3A9bOdYVxQSE/wZytBSvuNaF3B6wNYgx7xxc0Q2WfQBGLwg0fvfhiCQPquAtsrg2UKTY7nOozXy0eQMfMSmXTHULVk/OKU931G2YllhQt5z5g4fq8lk6QWQ1Ecai5zk5SHqavsB4pMsqdO+YVrnzDXUAadAaKqfAbmQ+YOWjiMc0RkkjtiJHRAFG9Ni+vDQMjnef2z/oE3dLnSIvMbJvtMrWUCmzHpREv7F4h2EWrwmPOKkuULI0sJ0w9Li21wRjwFaO1NB3P6591UOLPli9rnQGtiyqFDfBJSRWfJnhgNjVu9A57jbzLVC1cjYZukQ4mhMdPg9xj1BOtrFX8tEhAuBdwFRKFhzYONo4fe1Up/bDbFrSbY1ZTxMPQ7UDEKlTFZuSNod+lLMiF+EI9uxIazLBGoR8zSN2eiEQrTAWnH3Z+Vg6pY=
   app: sematest
   on:
     repo: avtyul/sematest
-    node_js: 6
-  skip_cleanup: true
