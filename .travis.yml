@@ -15,5 +15,3 @@ deploy:
   app: sematest
   on:
     repo: avtyul/sematest
-  run:
-    - "npm i"
