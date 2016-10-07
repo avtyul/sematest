@@ -4,7 +4,7 @@ install:
 - npm i
 - npm i -g gulp
 - echo -ne '\n\e[B\npublic/semantic/\n' | npm i semantic-ui --save
-- cd public/semantic && gulp build && cd ..
+- cd public/semantic && gulp build && cd ../..
 script:
 - npm run test
 deploy:
